@@ -29,7 +29,7 @@ nav {
   box-shadow: 0 2px 12px black;
 }
 
-.logo {
+.logo a {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-weight: 700;
@@ -47,10 +47,14 @@ nav a {
   color: rgb(26, 26, 26);
   font-weight: 500;
   font-size: 15px;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.3s;
+  display: inline-block;
 }
 
-nav a:hover { color: rgb(192, 57, 43); }
+nav a:hover { 
+  color: rgb(192, 57, 43); 
+  transform: scale(1.2);
+}
 
 /*   sections   */
 section {
