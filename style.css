@@ -1,0 +1,281 @@
+/* reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: rgb(245, 242, 238);
+  color: rgb(26, 26, 26);
+  line-height: 1.7;
+}
+
+/*   nav   */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: white;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid gainsboro;
+  box-shadow: 0 2px 12px black;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(192, 57, 43);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: rgb(192, 57, 43); }
+
+/*   sections   */
+section {
+  max-width: 900px;
+  margin: 56px auto;
+  padding: 40px 32px;
+  background: white;
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px black;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 6px brown;
+  color: rgb(26, 26, 26);
+}
+
+/*   about   */
+.about-inner {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-pic-wrap {
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgb(232, 213, 183);
+  box-shadow: 0 6px 20px rosybrown;
+}
+
+.about-text { flex: 1; min-width: 220px; }
+
+.accent { color: rgb(192, 57, 43); }
+
+.tagline {
+  font-size: 16px;
+  color: dimgray;
+  margin-bottom: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.about-text p { margin-bottom: 19px; color: dimgray; }
+
+/*   buttons   */
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  background: rgb(192, 57, 43);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px firebrick;
+}
+
+.btn:hover {
+  background: rgb(169, 50, 38);
+  transform: translateY(-2px);
+  box-shadow: 2px 6px 6px black;
+}
+
+.btn-sm {
+  display: inline-block;
+  margin-top: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(192, 57, 43);
+  text-decoration: none;
+  transition: letter-spacing 0.2s;
+}
+
+.btn-sm:hover { letter-spacing: 0.04em; }
+
+/*   skills   */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.skill-card {
+  padding: 9px 19px;
+  background: rgb(245, 242, 238);
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  background: rgb(192, 57, 43);
+  color: white;
+  border-color: rgb(192, 57, 43);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 16px firebrick;
+}
+
+/*   projects   */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  padding: 24px;
+  background: rgb(245, 242, 238);
+  border: 1px solid gainsboro;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px lightgray;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px gray;
+}
+
+.project-icon { font-size: 32px; margin-bottom: 10px; }
+
+.project-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.project-card p { font-size: 14px; color: dimgray; }
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 13px;
+}
+
+.project-tags span {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: rgb(232, 213, 183);
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/*   contact   */
+.contact-box > p {
+  color: dimgray;
+  margin-bottom: 24px;
+}
+
+form { display: flex; flex-direction: column; gap: 16px; }
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.form-row input { flex: 1; min-width: 180px; }
+
+input, textarea {
+  padding: 11px 16px;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  background: rgb(245, 242, 238);
+  color: rgb(26, 26, 26);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: rgb(192, 57, 43);
+  box-shadow: 0 0 0 3px mistyrose;
+}
+
+.social-links {
+  margin-top: 24px;
+  display: flex;
+  gap: 19px;
+}
+
+.social-links a {
+  color: dimgray;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.social-links a:hover { color: rgb(192, 57, 43); }
+
+/*   footer   */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: dimgray;
+  font-size: 14px;
+}
+
+/*   responsive   */
+@media (max-width: 600px) {
+  nav { padding: 16px 19px; }
+  nav ul { gap: 16px; }
+  section { margin: 32px 16px; padding: 24px 19px; }
+  .about-inner { flex-direction: column; text-align: center; }
+  .profile-pic { width: 120px; height: 120px; }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav>
+    <span class="logo">@shifat</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <div class="about-inner">
+      <div class="profile-pic-wrap">
+        <img src="profile.jpg"
+          alt="Profile Picture" class="profile-pic" />
+      </div>
+      <div class="about-text">
+        <h1 class="section-title">Hello, I'm <span class="accent">Shifat Rahman</span></h1>
+        <p class="tagline">Full-Stack Developer &amp; UI Designer</p>
+        <p>I build clean, fast, and accessible web experiences. Passionate about turning ideas into polished products —
+          from pixel-perfect interfaces to solid back-end systems.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Git &amp; GitHub</div>
+      <div class="skill-card">Figma</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">REST APIs</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-icon">🛒</div>
+        <h3>ShopEase</h3>
+        <p>A full-stack e-commerce platform with cart management, product filtering, and Stripe payment integration.</p>
+        <div class="project-tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+        <a href="#" class="btn-sm">View Project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📋</div>
+        <h3>TaskFlow</h3>
+        <p>A drag-and-drop Kanban task manager with real-time sync, user auth, and team collaboration features.</p>
+        <div class="project-tags">
+          <span>Vue.js</span>
+          <span>Firebase</span>
+        </div>
+        <a href="#" class="btn-sm">View Project →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🌤️</div>
+        <h3>WeatherNow</h3>
+        <p>A minimal weather app using the OpenWeather API with location-based forecasts and dynamic backgrounds.</p>
+        <div class="project-tags">
+          <span>JavaScript</span>
+          <span>API</span>
+          <span>CSS</span>
+        </div>
+        <a href="#" class="btn-sm">View Project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-box">
+      <p>Have a project in mind or just want to say hi? Drop me a message!</p>
+     
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+        </div>
+
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Shifat Rahman. </p>
+  </footer>
+
+</body>
+
+</html>
